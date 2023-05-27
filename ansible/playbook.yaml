@@ -1,0 +1,8 @@
+---
+- hosts: servers
+  gather_facts: no
+  tasks:
+    - name: Update all packages
+      apt:
+        upgrade: dist
+        update_cache: yes

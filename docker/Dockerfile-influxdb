@@ -1,0 +1,4 @@
+FROM influxdb:1.8
+EXPOSE 8086
+COPY influxdb.conf /etc/influxdb/influxdb.conf
+CMD ["influxd"]
